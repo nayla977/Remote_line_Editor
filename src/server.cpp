@@ -1,7 +1,13 @@
 //Program to create TCP server
 #include <iostream>
-#include "/home/cguser19/Sprint/include/func.h"
-#include "/home/cguser19/Sprint/include/server.h"
+#include "/home/cguser19/Remote_line_Editor/include/server.h"
+#include<sys/types.h>
+#include<sys/socket.h>
+#include<arpa/inet.h>
+#include<string.h>
+#include<unistd.h>
+#include<sys/shm.h>
+
 using namespace std;
 int main(int argc, char* argv[]){
         createShm();
